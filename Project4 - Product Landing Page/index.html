@@ -1,41 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Landing Page</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header id ="header">
-    <img id="header-img" src="" alt="picture will be here">
-    <nav id="nav-bar">
-      <ul>
-        <li>
-          <a class="nav-link" href="#link1">link1</a>
-          <a class="nav-link" href="#link2">link2</a>
-          <a class="nav-link" href="#link3">link3</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <div class="container">
-    <section id="link1">awesome secton1</section>
-    <section id="link2">awesome secton2</section>
-    <section id="link3">awesome secton3</section>
-  </div>
-  </div>
-    <iframe id="video" width="420" height="315"
-      src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>
-  </div>
-  <div>
-    <form id="form" action=" https://www.freecodecamp.com/email-submit">
-       <label for="email">Enter you email:</label>
-       <input type="email" name="email" id="email" placeholder="Enter you email here">
-       <input id="submit"type="submit">
-    </form>
-  </div>  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header id="header">
+        <div class="logo">
+          <img
+            id="header-img"
+            src="https://i.postimg.cc/tJFJHpTD/logo-removebg-preview.png"
+            alt="Bugg killer logo"
+          />
+        </div>
+
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#features">Characteristics</a></li>
+            <li><a class="nav-link" href="#how-it-works">How it works ?</a></li>
+            <li><a class="nav-link" href="#pricing">Price</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container"></div>
+
+      <section id="hero">
+        <h2>The Biodegradable Insect Repellent</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input id="submit" type="submit" value="Join Now" class="btn" />
+        </form>
+      </section>
+
+      <div class="container">
+        <section id="features">
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-star"></i></div>
+            <div class="desc">
+              <h2>Characteristics</h2>
+              <p>
+               <ul>
+                 <li>MADE WITH OIL OF LEMON EUCALYPTUS: This deet-free insect repellent provides you with protection during adventures in the backyard and on the go</li>
+                 <li>REPELS MOSQUITOES FOR UP TO 6 HOURS: This repellent keeps you and your family protected for hours, so the fun doesn't have to end.   
+                 </li>
+                 <li>
+                  REFRESHING SCENT: This DEET-free personal repellent leaves you with a cool, refreshing scent so you don't have to put up with the usual bug spray smell.
+                 </li>
+               </ul>
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-car"></i></div>
+            <div class="desc">
+              <h2>Fast Shipping</h2>
+              <p>
+                We make sure you recieve your BUG KILLER as soon as we have
+                finished making it. We also provide free returns if you are not
+                satisfied.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="how-it-works">
+          <iframe id="video" width="420" height="315"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </iframe>
+        </section>
+        <section id="pricing">
+          <div class="product" id="tenor">
+            <div class="level">Bug Killer</div>
+            <h2>$29.99</h2>
+            <ol>
+              <li>Perfect for prolonged outdoor activitie</li>
+              <li>Spray upside down for easy application.</li>
+              <li>Perfect for prolonged outdoor activities.</li>
+              <li>Convenient, on-the-go application.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+          <div class="product" id="bass">
+            <div class="level">BEST DEAL - Bug Killer - 3 for 2</div>
+            <h2>$59.99</h2>
+            <ol>
+              <li>Available in various active ingredient concentrations to match the length of your outdoor activity</li>
+              <li>Easily packed with your outdoor gear.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+          </div>
+        </section>
+        <footer>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <span>Copyright 2022, Original Bug Killer</span>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>
